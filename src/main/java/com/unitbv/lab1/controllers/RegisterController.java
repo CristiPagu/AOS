@@ -12,7 +12,7 @@ public class RegisterController {
 		personDAO = EntityDAOImplFactory.createNewPersonDAOImpl(persistenceUnitName);
 	}
 
-	public static void InsertNewPerson(String name, String email) {
+	public static void insertNewPerson(String name, String email) {
 		Person person = new Person(name, email);
 		personDAO.createOrUpdate(person);
 	}

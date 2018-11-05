@@ -29,11 +29,11 @@ public class RegisterTest {
 	public void insertAPersonTest() {
 		assertTrue(personDAO.readAll().isEmpty());
 
-		RegisterController.InsertNewPerson("testName", "testEmail");
+		RegisterController.insertNewPerson("testName", "testEmail");
 
 		assertTrue(personDAO.readAll().size() == 1);
 
-		RegisterController.InsertNewPerson("testName2", "testEmail2");
+		RegisterController.insertNewPerson("testName2", "testEmail2");
 
 		assertTrue(personDAO.readAll().size() == 2);
 	}
